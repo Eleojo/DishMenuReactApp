@@ -1,6 +1,6 @@
 import FoodList from "./components/FoodList";
 import Nav from "./components/Nav";
-import SearchBar from "./components/SeachBar";
+import Search from "./components/Search";
 import { useState } from "react";
 import "./App.css";
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Nav />
-      <SearchBar foodData={foodData} setFoodData={setFoodData} />
+      <Search foodData={foodData} setFoodData={setFoodData} />
 
       <FoodList foodData={foodData} />
     </div>
