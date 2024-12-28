@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./searchbar.module.css";
 
 const URL = "https://api.spoonacular.com/recipes/complexSearch";
-const API_Key = "279cd637bbf24a8aa80ae1f9f5f11e17";
+const API_Key = process.env.REACT_APP_API_KEY;
 
 export default function SearchBar({ foodData, setFoodData }) {
   const [query, setQuery] = useState("pizza");
